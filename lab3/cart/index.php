@@ -25,7 +25,6 @@ if (isset($_COOKIE['previous_cart'])) {
     }
     echo "</ul>";
 }
-?>
 
 <form method="post" action="index.php">
     Додати товар: <input type="text" name="product"><br>
