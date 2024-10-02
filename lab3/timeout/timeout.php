@@ -1,6 +1,6 @@
 <?php
 session_start();
-$timeout = 300; // 5 хвилин
+$timeout = 300;
 
 if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity']) > $timeout) {
     session_unset();
