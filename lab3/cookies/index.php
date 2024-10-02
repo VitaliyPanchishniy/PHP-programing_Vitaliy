@@ -1,12 +1,10 @@
 <?php
-// Встановлення cookie на 7 днів, якщо ім'я введено
 if (isset($_POST['username'])) {
     setcookie('username', htmlspecialchars($_POST['username']), time() + 7 * 24 * 60 * 60);
-    header('Location: index.php'); // Оновлюємо сторінку після введення
+    header('Location: index.php'); 
     exit;
 }
 
-// Видалення cookie, якщо воно встановлене
 if (isset($_COOKIE['username'])) {
     $username = $_COOKIE['username'];
     echo "Привіт, $username!<br>";
@@ -17,4 +15,4 @@ if (isset($_COOKIE['username'])) {
             <input type='submit' value='Зберегти'>
           </form>";
 }
-?>
+
