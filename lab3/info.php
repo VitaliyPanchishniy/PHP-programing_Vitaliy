@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: info.php'); // Перенаправлення, якщо не POST
+    header('Location: info.php');
     exit;
 }
 
